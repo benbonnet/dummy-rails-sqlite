@@ -1,0 +1,11 @@
+<div class="logs-container">
+
+  <p><strong><%= `hostname`.strip %></strong></p>
+  <h1>Logs</h1>
+
+  <div id="logs">
+    <%= render @logs %>
+  </div>
+</div>
+
+<%= turbo_stream_from "logs" %>
